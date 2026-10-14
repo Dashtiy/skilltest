@@ -2,167 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhromaon - Safe Travel Anywhere</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhromaon - Safe Travel Anywhere</title>
+  <link rel="icon" type="image/png" href="images/cabin.png">
 
-    <!-- CDNs (Normalize, Google Fonts, Font Awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="scss/style.css">
+  <!-- CDNs: Normalize, Google Fonts, Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Josefin+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="scss/normalize.scss">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-    <!-- 1. Hero Section -->
-    <header class="hero">
-        <div class="hero__content">
-            <h1 class="hero__title">BHROMAON</h1>
-            <p class="hero__tagline">Safe Travel Anywhere</p>
+  <!-- 1. Hero Section -->
+  <header class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">BHROMAON</h1>
+      <p class="hero__tagline">Safe Travel Anywhere</p>
 
-            <form class="search-form" action="#" method="get">
-                <label for="search" class="sr-only">Search Destination</label>
-                <input type="text" id="search" name="search" placeholder="Search Your Travel Destination" required>
-                <button type="submit" class="btn btn--search">
-                    <span>Search</span> <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
+      <form class="search-form" action="#" method="get">
+        <label for="search" class="sr-only">Search Travel Destination</label>
+        <input type="text" id="search" name="search" placeholder="Search Your Travel Destination" required>
+        <button type="submit" class="btn btn--search">
+          <span>Search</span> <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
 
-            <div class="hero__scroll">
-                <a href="#why-us" aria-label="Scroll to Why Choose Us">
-                    <span>Scroll Down</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
+      <div class="hero__scroll">
+        <a href="#why-us">
+          <span>Scroll Down</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Navigation Bar -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">BHROMAON</a>
+      <ul class="navbar__menu">
+        <li><a href="#who-we-are">Who We Are</a></li>
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#travel-with-us">Travel With Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 3. Why Choose Us -->
+    <section class="why-us" id="why-us">
+      <div class="container why-us__grid">
+        <div class="why-us__text">
+          <h2>Why Choose Us</h2>
+          <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment,
+            so blinded by desire, that they cannot foresee.</p>
+          <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+            desire, that they cannot foresee.</p>
+          <a href="#" class="btn btn--primary">Explore Places</a>
         </div>
-    </header>
-
-    <!-- 2. Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="container navbar__inner">
-            <a href="#" class="navbar__logo">BHROMAON</a>
-            <ul class="navbar__menu">
-                <li><a href="#who-we-are">Who We Are</a></li>
-                <li><a href="#what-we-do">What We Do</a></li>
-                <li><a href="#travel-with-us">Travel With Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+        <div class="why-us__images">
+          <div class="img-box img-box--top">
+            <img src="images/cabin.png" alt="Cabin on lake">
+          </div>
+          <div class="img-box img-box--bottom">
+            <img src="images/hero.png" alt="Mountain summit valley">
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <main>
-        <!-- 3. Why Choose Us -->
-        <section class="why-us" id="why-us">
-            <div class="container why-us__grid">
-                <div class="why-us__text">
-                    <h2>Why Choose Us</h2>
-                    <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of
-                        the moment, so blinded by desire, that they cannot foresee.</p>
-                    <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
-                        blinded by desire, that they cannot foresee.</p>
-                    <a href="#" class="btn btn--primary">Explore Places</a>
-                </div>
-                <div class="why-us__images">
-                    <img src="images/Image.png" alt="Cabin on lake" class="img-staggered-1">
-                    <img src="images/Image1.png" alt="Mountain summit valley" class="img-staggered-2">
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. How It Works Steps -->
-        <section class="how-it-works" id="what-we-do">
-            <div class="container how-it-works__steps">
-                <div class="step-card">
-                    <div class="step-card__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <p>Search Places</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-card__icon"><i class="fa-regular fa-circle-check"></i></div>
-                    <p>Select Places</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-card__icon"><i class="fa-solid fa-thumbs-up"></i></div>
-                    <p>Book &amp; Enjoy</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Destination Feature 1 (Spain / Grand Spain Madrid) -->
-        <section class="destination destination--left" id="travel-with-us">
-            <div class="destination__bg">
-                <img src="images/Rectangle 41445.png" alt="Modern villa with pool">
-            </div>
-            <div class="container">
-                <div class="destination__card">
-                    <span class="destination__country">Spain</span>
-                    <h3>GRAND SPAIN MADRID</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                        born and I will give you a complete account of the system.</p>
-                    <a href="#" class="btn btn--primary">Book Now</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Destination Feature 2 (Spain) -->
-        <section class="destination destination--right">
-            <div class="destination__bg">
-                <img src="images/Rectangle 4142 1.png" alt="Mountain cliffs sunset">
-            </div>
-            <div class="container">
-                <div class="destination__card">
-                    <span class="destination__country">Spain</span>
-                    <h3>GRAND SPAIN MADRID</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                        born and I will give you a complete account of the system.</p>
-                    <a href="#" class="btn btn--primary">Book Now</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. Testimonial Section -->
-        <section class="testimonials" id="who-we-are">
-            <div class="container">
-                <h2 class="testimonials__title">What Our Tourist Say</h2>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="images/Rectangle 41441 1.png" alt="Sam Smith traveler">
-                    </div>
-                    <div class="testimonial-card__content">
-                        <h4>SAM SMITH</h4>
-                        <blockquote>
-                            <i class="fa-solid fa-quote-left quote-icon"></i>
-                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born and I will give you a complete account of the system, and expound the actual
-                            teachings of the great explorer of the truth, the master-builder of human happiness.
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 8. Footer -->
-    <footer class="footer" id="contact">
-        <div class="container footer__inner">
-            <h3 class="footer__logo">BHROMAON</h3>
-            <p class="footer__tagline">Safe Travel Anywhere</p>
-            <ul class="footer__socials">
-                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
-            </ul>
+    <!-- 4. How It Works Steps -->
+    <section class="how-it-works" id="what-we-do">
+      <div class="container how-it-works__steps">
+        <div class="step-card">
+          <div class="step-card__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <p>Search Places</p>
         </div>
-    </footer>
+        <div class="step-card">
+          <div class="step-card__icon"><i class="fa-regular fa-circle-check"></i></div>
+          <p>Select Places</p>
+        </div>
+        <div class="step-card">
+          <div class="step-card__icon"><i class="fa-solid fa-thumbs-up"></i></div>
+          <p>Book &amp; Enjoy</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Destination 1 (Spain Villa) -->
+    <section class="destination destination--left" id="travel-with-us">
+      <div class="destination__bg">
+        <img src="images/spain-villa.png" alt="Modern villa with pool">
+      </div>
+      <div class="container">
+        <div class="destination__card">
+          <span class="destination__country">Spain</span>
+          <h3>GRAND SPAIN MADRID</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            I will give you a complete account of the system.</p>
+          <a href="#" class="btn btn--primary">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Destination 2 (Spain Sunset) -->
+    <section class="destination destination--right">
+      <div class="destination__bg">
+        <img src="images/spainsunset.png" alt="Mountain cliffs sunset">
+      </div>
+      <div class="container">
+        <div class="destination__card">
+          <span class="destination__country">Spain</span>
+          <h3>GRAND SPAIN MADRID</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            I will give you a complete account of the system.</p>
+          <a href="#" class="btn btn--primary">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="testimonials" id="who-we-are">
+      <div class="container">
+        <h2 class="testimonials__title">What Our Tourist Say</h2>
+        <div class="testimonial-card">
+          <div class="testimonial-card__image">
+            <img src="images/touristsam.png" alt="Sam Smith traveler">
+          </div>
+          <div class="testimonial-card__content">
+            <h4>SAM SMITH</h4>
+            <blockquote>
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+              I will give you a complete account of the system, and expound the actual teachings of the great explorer
+              of the truth.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <h3 class="footer__logo">BHROMAON</h3>
+      <p class="footer__tagline">Safe Travel Anywhere</p>
+      <ul class="footer__socials">
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 

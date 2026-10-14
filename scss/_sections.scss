@@ -1,4 +1,317 @@
-@import 'variables';
-@import 'base';
-@import 'header-nav';
-@import 'sections';
+// 1. Why Choose Us Section
+.why-us {
+  padding: 100px 0;
+  background-image: url('../images/why-us.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 35, 35, 0.92);
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__text {
+    flex: 1;
+    max-width: 500px;
+
+    h2 {
+      font-family: $font-heading;
+      font-size: 2.25rem;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color: $color-text-light;
+    }
+
+    p {
+      font-family: $font-body;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: $color-text-muted;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__images {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+
+    img {
+      width: 250px;
+      height: 330px;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .img-stagger-top {
+      margin-top: 0;
+    }
+
+    .img-stagger-bottom {
+      margin-top: 55px;
+    }
+  }
+}
+
+// 2. How It Works Bar
+.how-it-works {
+  background-color: #333333;
+  padding: 50px 0;
+
+  &__steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    &__icon {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-family: $font-heading;
+      font-size: 1.15rem;
+      color: #ffffff;
+    }
+
+    &:nth-child(1) .step-card__icon { background-color: #3f51b5; }
+    &:nth-child(2) .step-card__icon { background-color: #e91e63; }
+    &:nth-child(3) .step-card__icon { background-color: #00bcd4; }
+  }
+}
+
+// 3. Destination Feature Banners (Spain Villa & Sunset with dark floating cards)
+.destination {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  &--left .container {
+    justify-content: flex-start;
+  }
+
+  &--right .container {
+    justify-content: flex-end;
+  }
+
+  &__card {
+    background-color: rgba(35, 35, 35, 0.95);
+    padding: 45px 50px;
+    max-width: 500px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+
+    .destination__country {
+      display: inline-block;
+      font-family: $font-body;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: $color-text-muted;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: $font-heading;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #ffffff;
+    }
+
+    p {
+      font-family: $font-body;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: $color-text-muted;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+// 4. Testimonials Section
+.testimonials {
+  padding: 100px 0;
+  background-color: $color-dark-bg;
+  text-align: center;
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+
+  .testimonial-card {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #333333;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    &__image {
+      flex: 0 0 340px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h4 {
+        font-family: $font-heading;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      blockquote {
+        font-family: $font-body;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: $color-text-muted;
+
+        .quote-icon {
+          color: $color-primary;
+          font-size: 1.25rem;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+// 5. Footer
+.footer {
+  background-image: url('../images/footer.png');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a1a1a;
+  padding: 60px 0 40px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 20, 20, 0.9);
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__logo {
+    font-family: $font-heading;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  &__tagline {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: $color-text-muted;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 22px;
+
+    li a {
+      color: $color-text-muted;
+      font-size: 1.15rem;
+      transition: color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        color: $color-primary;
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
